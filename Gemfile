@@ -34,7 +34,19 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
+# Authentication
+gem 'devise'
+
+# grape API
+gem 'grape'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'grape-active_model_serializers'
+gem 'grape_on_rails_routes'
+gem 'grape-swagger'
+
 gem 'simple_form'
+# Paging
+gem 'kaminari'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
