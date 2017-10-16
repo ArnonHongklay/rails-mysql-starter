@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  mount Lockr::API => '/'
+  mount ApplicationApi, at: "/"
   mount GrapeSwaggerRails::Engine => '/swagger'
 
   root 'welcome#index'
