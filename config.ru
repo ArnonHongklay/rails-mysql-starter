@@ -3,4 +3,4 @@
 require_relative 'config/environment'
 
 run Rails.application
-# run Lockr::API
+# run Starter::API
