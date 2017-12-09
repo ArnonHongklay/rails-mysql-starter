@@ -1,5 +1,5 @@
 ## Define all application constants here
-API_VENDOR = 'Lockr'
+API_VENDOR = 'Starter'
 
 # https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 RESPONSE_CODE = {

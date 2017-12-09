@@ -13,20 +13,28 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
+  username: user
+  password: password
   host: localhost
+
+  # adapter: postgresql
+  # encoding: unicode
+  # host: db
+  # username: postgres
+  # password:
+  # pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
 
 development:
   <<: *default
-  database: Lockr_development
+  database: Starter_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: Lockr_test
+  database: Starter_test
 
 # As with config/secrets.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -49,6 +57,6 @@ test:
 #
 production:
   <<: *default
-  database: Lockr_production
-  username: Lockr
-  password: <%= ENV['LOCKR_DATABASE_PASSWORD'] %>
+  database: Starter_production
+  username: Starter
+  password: <%= ENV['Starter_DATABASE_PASSWORD'] %>
